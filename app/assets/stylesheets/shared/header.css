@@ -1,0 +1,25 @@
+.header-main{
+  height: 130px;
+  width: 100vw;
+  background-color: #F8F8FF;
+  display: flex;
+  text-align: center;
+  justify-content: space-between;
+}
+.header-logo{
+  height: 130px;
+  border: solid 1px #BBFFFF;
+}
+.header-right{
+  width: calc(100vw - 150px);
+  display: flex;
+  text-align: center;
+  justify-content: right;
+}
+.header-right-content{
+  font-size: 30px;
+  margin: auto 30px;
+  border: solid 0.5px black;
+  padding: 10px 30px;
+  border-radius: 60%;
+}
