@@ -1,0 +1,16 @@
+<div class="main">
+  <%= render "shared/header"%>
+  <div class="post-show">
+    <div class="post-show-image">
+      <%= image_tag @post.image, class: "show-image" %>
+    </div>
+    <div class="post-letter">
+      <div class="post-show-title">
+        <%= @post.title %>
+      </div>
+      <div class="post-show-text">
+        <%= @post.text %>
+      </div>
+    </div>
+  </div>
+</div>

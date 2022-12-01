@@ -1,0 +1,20 @@
+.post-show{
+  padding: 30px 60px;
+  display: flex;
+}
+.show-image{
+  height: 600px;
+  width: 800px;
+}
+
+.post-letter{
+  margin-left: 30px;
+}
+.post-show-title{
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+.post-show-text{
+  font-size: 25px;
+
+}
