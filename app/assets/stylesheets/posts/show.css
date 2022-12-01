@@ -18,3 +18,23 @@
   font-size: 25px;
 
 }
+
+.post-show-right-bottom{
+  position: fixed;
+  bottom: 60px;
+  margin-left: 900px;
+  font-size: 30px;
+}
+
+.link_edit{
+  margin-right: 40px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.link_delete{
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+}
