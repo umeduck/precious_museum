@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 .header-logo{
-  height: 130px;
+  height: 100%;
   border: solid 1px #BBFFFF;
 }
 .header-right{

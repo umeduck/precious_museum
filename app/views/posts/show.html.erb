@@ -1,0 +1,22 @@
+<div class="main">
+  <%= render "shared/header"%>
+  <div class="post-show">
+    <div class="post-show-image">
+      <%= image_tag @post.image, class: "show-image" %>
+    </div>
+    <div class="post-letter">
+      <div class="post-show-title">
+        <%= @post.title %>
+      </div>
+      <div class="post-show-text">
+        <%= @post.text %>
+      </div>
+    </div>
+    <% if @post.user_id == current_user.id %>
+      <div class="post-show-right-bottom">
+        <%= link_to "編集ページ", edit_post_path(@post.id), class: "link_edit" %>
+        <%= link_to "投稿を削除", post_path(@post.id), method: :delete, class: "link_delete" %>
+      </div>
+    <% end %>
+  </div>
+</div>

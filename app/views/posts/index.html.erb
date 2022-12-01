@@ -3,12 +3,9 @@
   <div class="main-top">
     <div class="main-top-up">
       <ul class="slider">
-        <li><%= image_tag "kamo.JPG" %></li>
-        <li><%= image_tag "kamo_2.JPG" %></li>
-        <li><%= image_tag "bald_eagle.JPG" %></li>
-        <li><%= image_tag "momizi.JPG" %></li>
-        <li><%= image_tag "momizi_2.JPG" %></li>
-        <li><%= image_tag "moon.JPG" %></li>
+        <% @posts.each do |post| %>
+          <li><%= link_to image_tag(post.image), post_path(post.id) %></li>
+        <% end %>
       </ul>
     </div>
     <div class="main-bottom">

@@ -1,7 +1,10 @@
 <div class="header-main">
-  <%= image_tag "top.png", class: "header-logo" %>
+  <a href="/posts">
+    <%= image_tag "top.png", class: "header-logo" %>
+  </a>
   <div class="header-right">
     <% if user_signed_in? %>
+      <%= link_to "新規投稿", new_post_path, class: "header-right-content"%>
       <%= link_to current_user.name, "#", class: "header-right-content" %>
       <%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "header-right-content" %>
     <% else %>

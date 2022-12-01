@@ -1,4 +1,7 @@
 <meta http-equiv="refresh" content="3; url=/posts ">
 <div class= "top-main" >
   <%= image_tag "top.png" ,class: "top-image" %>
+  <% if user_signed_in? %>
+    <h2>~ようこそ<%= current_user.name%>さん~</h2>
+  <% end %>
 </div>
